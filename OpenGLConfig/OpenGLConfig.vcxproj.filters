@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{2fcda238-0583-42e0-b58f-46b153766b44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{c483d2d9-7d7e-40cf-a0af-b345e1afc2d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{1de12bbe-952c-41e7-8b3b-323949a03c1c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Core\GameModels.cpp" />
+    <ClCompile Include="Managers\Shader_Manager.cpp" />
+    <ClCompile Include="Core\Init\Init_GLEW.cpp" />
+    <ClCompile Include="Core\Init\Init_GLUT.cpp" />
+    <ClCompile Include="Managers\Scene_Manager.cpp" />
+    <ClCompile Include="Rendering\Models\Model.cpp" />
+    <ClCompile Include="Rendering\Models\Triangle.cpp" />
+    <ClCompile Include="Managers\Models_Manager.cpp" />
+    <ClCompile Include="Rendering\Models\Cube.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Core\GameModels.h" />
+    <ClInclude Include="Core\VertexFormat.h" />
+    <ClInclude Include="Managers\Shader_Manager.h" />
+    <ClInclude Include="Core\Init\WindowInfo.h" />
+    <ClInclude Include="Core\Init\ContextInfo.h" />
+    <ClInclude Include="Core\Init\FramebufferInfo.h" />
+    <ClInclude Include="Core\Init\Init_GLEW.h" />
+    <ClInclude Include="Core\Init\Init_GLUT.h" />
+    <ClInclude Include="Core\Init\IListener.h" />
+    <ClInclude Include="Managers\Scene_Manager.h" />
+    <ClInclude Include="Rendering\VertexFormat.h" />
+    <ClInclude Include="Rendering\IGameObject.h" />
+    <ClInclude Include="Rendering\Models\Model.h" />
+    <ClInclude Include="Rendering\Models\Triangle.h" />
+    <ClInclude Include="Managers\Models_Manager.h" />
+    <ClInclude Include="Rendering\Models\Cube.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Shaders\Fragment_Shader.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\Vertex_Shader.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OpenGLConfig.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
