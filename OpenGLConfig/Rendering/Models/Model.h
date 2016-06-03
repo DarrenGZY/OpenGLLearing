@@ -16,6 +16,9 @@ namespace Rendering
 			virtual void SetProgram(GLuint shaderName) override;
 			virtual void Destroy() override;
 
+			virtual void Draw(const glm::mat4& projection_matrix,
+				const glm::mat4& view_matrix) override;
+
 			virtual GLuint GetVao() const override;
 			virtual const std::vector<GLuint>& GetVbos() const override;
 

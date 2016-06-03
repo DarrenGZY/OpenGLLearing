@@ -1,11 +1,23 @@
-﻿生成启动时间为 2016/6/2 17:59:29。
+﻿生成启动时间为 2016/6/3 17:18:18。
      1>项目“C:\Users\Zhiyuan\Documents\Visual Studio 2013\Projects\OpenGLConfig\OpenGLConfig\OpenGLConfig.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Zhiyuan\Documents\Visual Studio 2013\Projects\OpenGLConfig\packages\glm.0.9.7.1\build\native\../..//build/native/include/" /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Rendering\Models\Cube.cpp
-         Cube.cpp
-     1>c:\users\zhiyuan\documents\visual studio 2013\projects\openglconfig\openglconfig\rendering\models\cube.h(18): error C3668: “Rendering::Models::Cube::Draw”: 包含重写说明符“override”的方法没有重写任何基类方法
-     1>已完成生成项目“C:\Users\Zhiyuan\Documents\Visual Studio 2013\Projects\OpenGLConfig\OpenGLConfig\OpenGLConfig.vcxproj”(Build 个目标)的操作 - 失败。
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Zhiyuan\Documents\Visual Studio 2013\Projects\OpenGLConfig\packages\glm.0.9.7.1\build\native\../..//build/native/include/" /I"C:\Program Files (x86)\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Managers\Scene_Manager.cpp
+         Scene_Manager.cpp
+       Link:
+         D:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Zhiyuan\Documents\Visual Studio 2013\Projects\OpenGLConfig\Debug\OpenGLConfig.exe" /INCREMENTAL /NOLOGO /LIBPATH:Dependencies\freeglut /LIBPATH:Dependencies\glew /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" /LIBPATH:"C:\Program Files (x86)\Visual Leak Detector\lib\Win32" opengl32.lib freeglut.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Zhiyuan\Documents\Visual Studio 2013\Projects\OpenGLConfig\Debug\OpenGLConfig.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Zhiyuan\Documents\Visual Studio 2013\Projects\OpenGLConfig\Debug\OpenGLConfig.lib" /MACHINE:X86 Debug\OpenGLConfig.res
+         Debug\GameModels.obj
+         Debug\Init_GLEW.obj
+         Debug\Init_GLUT.obj
+         Debug\Cube.obj
+         Debug\main.obj
+         Debug\Shader_Manager.obj
+         Debug\Scene_Manager.obj
+         Debug\Models_Manager.obj
+         Debug\Model.obj
+         Debug\Triangle.obj
+         OpenGLConfig.vcxproj -> C:\Users\Zhiyuan\Documents\Visual Studio 2013\Projects\OpenGLConfig\Debug\OpenGLConfig.exe
+     1>已完成生成项目“C:\Users\Zhiyuan\Documents\Visual Studio 2013\Projects\OpenGLConfig\OpenGLConfig\OpenGLConfig.vcxproj”(Build 个目标)的操作。
 
-生成失败。
+生成成功。
 
-已用时间 00:00:00.89
+已用时间 00:00:01.21

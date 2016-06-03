@@ -14,6 +14,12 @@ void Model::Draw()
 	//this will be again overridden
 }
 
+void Model::Draw(const glm::mat4& projection_matrix,
+	const glm::mat4& view_matrix)
+{
+
+}
+
 void Model::Update()
 {
 	//this will be again overridden
