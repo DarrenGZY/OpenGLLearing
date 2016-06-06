@@ -1,5 +1,6 @@
 //Cube.cpp
 #include "Cube.h"
+#include <glm/gtc/type_ptr.hpp>
 using namespace Rendering;
 using namespace Models;
 
@@ -150,7 +151,39 @@ void Cube::Draw(const glm::mat4& projection_matrix,
 		rotation_sin.z);
 	glUniformMatrix4fv(glGetUniformLocation(program, "view_matrix"), 1,
 		false, &view_matrix[0][0]);
+
+// 	float ar = (float)glutGet(GLUT_WINDOW_WIDTH) /
+// 		(float)glutGet(GLUT_WINDOW_HEIGHT);
+// 	float angle = 45.0f, near1 = 0.1f, far1 = 2000.0f;
+// 
+// 	projection_matrix[0][0] = 1.0f / (ar * tan(angle / 2.0f));
+// 	projection_matrix[1][1] = 1.0f / tan(angle / 2.0f);
+// 	projection_matrix[2][2] = (-near1 - far1) / (near1 - far1);
+// 	projection_matrix[2][3] = 1.0f;
+// 	projection_matrix[3][2] = 2.0f * near1 * far1 / (near1 - far1);
+// 
+// 	float project[16];
+// 	project[0] = 1.0f / (ar * tan(angle / 2.0f));
+// 	project[1] = 0.0f;
+// 	project[2] = 0.0f;
+// 	project[3] = 0.0f;
+// 	project[4] = 0.0f;
+// 	project[5] = 1.0f / tan(angle / 2.0f);
+// 	project[6] = 0.0f;
+// 	project[7] = 0.0f;
+// 	project[8] = 0.0f;
+// 	project[9] = 0.0f;
+// 	project[10] = (-near1 - far1) / (near1 - far1);
+// 	project[11] = 1.0f;
+// 	project[12] = 0.0f;
+// 	project[13] = 0.0f;
+// 	project[14] = 2.0f * near1 * far1 / (near1 - far1);
+// 	project[15] = 0.0f;
+// 
+// 	glm::mat4 m = glm::make_mat4(project);
+
 	glUniformMatrix4fv(glGetUniformLocation(program, "projection_matrix"), 1, false, &projection_matrix[0][0]);
 	glBindVertexArray(vao);
+
 	glDrawArrays(GL_TRIANGLES, 0, 36);
 }

@@ -29,6 +29,6 @@ void main()
                     0.0, 0.0, 0.0, 1.0);
  
     gl_Position = projection_matrix * view_matrix *
-                  rotate_y * rotate_x *rotate_z * vec4(in_position, 0.3);
+                  rotate_y * rotate_x *rotate_z * vec4(in_position, 1.0);
      
 }

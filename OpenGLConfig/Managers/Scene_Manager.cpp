@@ -11,7 +11,7 @@ Scene_Manager::Scene_Manager()
 		"Shaders\\Vertex_Shader.glsl",
 		"Shaders\\Fragment_Shader.glsl");
 
-	view_matrix = glm::mat4(1.0f, 0.0f, 0.0f, 0.0f,
+	view_matrix = glm::mat4(-1.0f, 0.0f, 0.0f, 0.0f,
 		0.0f, 1.0f, 0.0f, 0.0f,
 		0.0f, 0.0f, -1.0f, 0.0f,
 		0.0f, 0.0f, 10.0f, 1.0f);
